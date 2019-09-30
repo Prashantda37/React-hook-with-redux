@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 const TOGGLE_CHECKED = "TOGGLE CHECKED";
 const TOGGLE_UNCHECKED = "TOGGLE UNCHECKED";
+
 const Button = () => {
   const currentState = useSelector(state => {
     return {
@@ -13,7 +14,7 @@ const Button = () => {
   return (
     <div>
       <h1 style={{ textDecoration: "underline", color: "green" }}>
-        Redux with hook Example
+        hook with Redux App Example
       </h1>
       <h3>Check Value : {currentState.toggleSwitch}</h3>
       <button
